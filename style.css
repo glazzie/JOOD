@@ -1,0 +1,622 @@
+@import "/standard.css";
+
+.bg-pic{
+background-image: url("/images/blue_background_crop.png"); /* The image used */
+  background-color: white; /* Used if the image is unavailable */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 800px;
+  margin-bottom: 5rem;
+
+}
+
+.topnav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.hovereffect1{
+    position: relative;
+}
+
+.hovereffect1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: #FFBB00;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 200ms ease-in;
+}
+
+.hovereffect1:hover::after{
+    transform: scaleX(0.4);
+    
+}
+
+
+.navbar a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: medium;
+    margin-left: 11px;
+}
+
+.navbar a:hover{
+    color: #FFBB00;
+    box-sizing: border-box;
+}
+
+.navbar a:not(:last-child){
+    display: none;
+}
+
+.navbar a button {
+    background-color: #FFBB00;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: medium;
+    padding: 0.5rem 1rem;
+    border: 0px;
+   
+    
+    
+}
+
+.image-info{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.image-info p{
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.image-info h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.dload-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+    
+    
+}
+
+
+.btn-download{
+    background-color: transparent;
+    border-color: white;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: medium;
+    padding: 1rem;
+    border: 2px solid white;
+    margin-bottom: 1rem;
+}
+
+.btn-play{
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: medium;
+    padding: 0rem;
+    border: 0px;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-play img{
+    
+    margin: 0.5rem;
+    padding: 0;
+
+}
+
+.top-info{
+    display: flex;
+}
+
+.mobile-pic{
+    
+    display: none;
+}
+
+.ecutb{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ecutb img{
+    height: 20px;
+    margin: 30px px;
+}
+
+.gridx{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+
+}
+
+.btn-apps{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.btn-apps button{
+    margin-right: 20px;
+    border-radius: 20px;
+    margin-top: 1rem;
+
+
+    
+    border: 0px;
+}
+
+.ip{
+    display: none;
+}
+
+.ball1{display: none;}
+.ball2{display: none;}
+
+.textbox-info{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.textbox-info button{
+    border: 0px;
+}
+
+.aboutbtn{
+    width: 100px;
+    background-color: rgb(255, 187, 0, 0.15);
+    color: #FFBB00;
+    border: 0px;
+    border-radius: 5px;
+    
+}
+
+.textbox-info h2{
+    margin: 20px 0px;
+}
+
+.item1 h3{
+    margin: 20px 0px;
+}
+
+
+.item1 { grid-area: q; }
+.item2 { grid-area: w; }
+.item3 { grid-area: e; }
+.item4 { grid-area: r; }
+
+
+.gridxx {
+  display: grid;
+  grid-template-areas:
+    'q q q q q q '
+    'q q q q q q '
+    'w w w w w w '
+    'w w w w w w '
+    'e e e e e e '
+    ;
+  grid-gap: 10px;
+  padding: 10px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+}
+
+.mobile-scale{
+    height: 300px;
+    
+}
+.flexcenter{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.grid4i {
+    display: grid;
+    grid-template-areas:
+      'q'
+      'w'
+      'e'
+      'r';
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+.flex4i{
+    display: grid;
+    grid-template-areas:
+      'q q w'
+      'q q e'
+      'q q e'
+     ;
+    grid-gap: 5px;
+    padding: 5px;
+}
+
+.icsize{
+    height: 70px;
+}
+
+.t1{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.t2{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.swiper-container {
+    height: 400px;
+
+}
+
+.ipf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ipf p{
+    text-align: center;
+}
+
+.ipf h4{
+    text-align: center;
+}
+.ipf h5{
+    text-align: center;
+}
+
+
+.ph1{
+    height: 300px;
+}
+
+.ph2{
+    opacity: 71%;
+    height: 300px;
+}
+
+.pbox{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.fl-space-b{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.s1{
+    color: #3096FE;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.s2{
+    
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+.bg-pic2{
+    background-image: url("/images/Bg.png"); /* The image used */
+      background-color: white; /* Used if the image is unavailable */
+      background-position: left; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+      height: 645px;
+      margin: 5rem 0rem;
+
+    
+    }
+
+.gridwb{
+    display: grid;
+    grid-template-areas:
+    'q q'
+    'e e'
+    'w w'
+   ;
+  grid-gap: 5px;
+  padding: 5px;
+}
+
+.ip3s{
+    height: 200px;
+}
+
+.f1h{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 2rem 0rem;
+}
+
+.f1p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #3096FE;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #1487FD;
+  }
+
+  .fgrid{
+    display: grid;
+    grid-template-areas:
+      'q '
+      'w '
+      'e'
+      'r'
+     ;
+    grid-gap: 5px;
+    padding: 5px;
+  }
+
+
+@media (min-width: 472px) { 
+
+    .ecutb img{
+        height: 10px;
+        margin: 30px 0px;
+    }
+
+    .flexcenter{
+        justify-content: center;
+    }
+   
+   
+
+}
+    
+
+
+@media (min-width: 768px) {
+
+    .ecutb img{
+        height: 20px;
+        margin: 30px 0px;
+    }
+
+    .navbar a:not(:last-child){
+        display: block;
+        
+    }
+
+    .navbar > a > .navicon{
+        display: none;
+    }
+
+    .mobile-pic{
+       
+        display: block;
+        height: 530px;
+        margin-top: 125px;
+    }
+
+    .btn-download{
+
+        padding: 0rem 2rem;
+    }
+
+    .image-info{
+        text-align: left;
+    
+    }
+
+    .ip{
+        display: block;
+        width: 300px;
+    }
+
+    .gridx{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .navbar a{
+        margin-left: 10px;
+    }
+
+    .grid4i {
+        grid-template-areas:
+          'q w'
+          'e r';
+      }
+
+
+      .icsize{
+        height: 50px;
+    }
+
+    .mobile-scale{
+        height: 500px;
+    }
+
+    
+
+ }
+
+
+@media (min-width: 992px) {
+
+    .dload-bar{
+        justify-content: left;
+}
+
+.btn-play{
+    margin-left: 40px;
+}
+
+
+
+.navbar a{
+    
+    margin-left: 30px;
+}
+
+.ball1{
+    display: inline;
+    position: relative;
+    z-index: -1;
+    left: 130px;
+    top: 300px;
+
+    animation: ball1 7s linear infinite;
+    transform: rotate(180deg) translateX(175px);
+}
+
+@keyframes ball1 {
+	from { 	transform: rotate(180deg) translateX(175px) rotate(0deg); }
+	to   {  transform: rotate(540deg) translateX(175px) rotate(-360deg); }
+}
+
+.ball2{
+    display: inline;
+    position: relative;
+    z-index: -1;
+    left: 130px;
+    bottom: 300px;
+   
+
+    animation: ball2 7s linear infinite;
+    transform: rotate(0deg) translateX(175px);
+
+}
+@keyframes ball2 {
+	from { 	transform: rotate(0deg) translateX(175px) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(175px) rotate(-360deg); }
+}
+
+
+.gridxx {
+    grid-template-areas:
+      'q q q q w w '
+      'q q q q w w '
+      'e e e e w w '
+      'e e e e w w '
+      'e e e e w w '
+      ;
+  }
+
+  .icsize{
+    height: 50px;
+}
+
+.mobile-scale{
+    height: 400px;
+}
+
+
+
+}
+
+
+@media (min-width: 1200px) {
+    .bg-pic{
+        height: 950px;
+
+    }
+
+    .mobile-pic{
+        height: 800px;
+        width: auto;
+        margin-top: 2rem;
+        position: relative;
+    }
+
+    .image-info{
+        margin-top: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+
+    .navbar a{
+    
+        margin-left: 50px;
+    }
+
+
+    .mobile-scale{
+        height: 500px;
+        
+    }
+
+ 
+
+
+}
